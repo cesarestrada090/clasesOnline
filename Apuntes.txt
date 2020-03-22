@@ -1,8 +1,19 @@
 git commit -a -m "Changed something else"
 
-
 git push
 
 git pull origin master
 
 Pagina GITHUB: https://github.com/cesarestrada090/clasesOnline
+
+Mockup Alumno:
+
+https://balsamiq.cloud/sfsy059/pm3rwr/rCA14
+
+Mockup Docente
+
+https://balsamiq.cloud/sfsy059/pm3rwr/r2278
+
+Trello
+
+https://trello.com/b/LZ0L34Vb/proyecto-clases-online
