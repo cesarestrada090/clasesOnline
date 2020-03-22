@@ -1,0 +1,8 @@
+git commit -a -m "Changed something else"
+
+
+git push
+
+git pull origin master
+
+Pagina GITHUB: https://github.com/cesarestrada090/clasesOnline
