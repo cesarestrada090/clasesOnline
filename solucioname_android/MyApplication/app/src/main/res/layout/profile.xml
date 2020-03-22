@@ -7,64 +7,54 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_width="146dp"
+        android:layout_height="105dp"
         android:layout_gravity="center"
         android:src="@drawable/logo1" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
         android:layout_gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
         android:src="@drawable/logo2" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese Usuario"
-        android:paddingBottom="10dp" />
+        android:paddingBottom="12dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
+        android:paddingBottom="12dp"
         android:hint="Ingrese Contraseña" />
 
     <Button
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="7dp"
         android:background="@color/loginButton"
         android:text="Iniciar Sesión"
         android:textColor="#ffffff" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="5dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/darker_gray"/>
+        android:background="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/loginFbButton"
         android:layout_width="212dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/roundedbutton"
-        android:layout_marginBottom="20dp"
         android:text="Login con Facebook"
-        android:textColor="#ffffff" />
-
-    <Button
-        android:id="@+id/loginTwitterButton"
-        android:layout_width="212dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/roundedbuttontwitter"
-        android:layout_marginBottom="20dp"
-        android:text="Login con Twitter"
         android:textColor="#ffffff" />
 
     <Button
@@ -72,9 +62,19 @@
         android:layout_width="212dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:background="@drawable/roundedbuttongoogle"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedbuttongoogle"
         android:text="Login con Google"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/loginTwitterButton"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedbuttontwitter"
+        android:text="Login con Twitter"
         android:textColor="#ffffff" />
 
     <TextView
