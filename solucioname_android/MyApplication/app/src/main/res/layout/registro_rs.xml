@@ -7,68 +7,6 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="179dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center"
-        android:background="@color/loginButton"
-        android:text="Registrate ahora"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="516dp" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="@android:color/darker_gray"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="446dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="¿Aún no estas registrado?"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="471dp" />
-
-    <Button
-        android:id="@+id/loginTwitterButton2"
-        android:layout_width="212dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/roundedbuttontwitter"
-        android:text="Registrarse con Twitter"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="373dp" />
-
-    <Button
-        android:id="@+id/loginFbButton2"
-        android:layout_width="212dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/roundedbutton"
-        android:text="Registrarse con Facebook"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="233dp" />
-
-    <Button
-        android:id="@+id/loginGoogleButton2"
-        android:layout_width="212dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/roundedbuttongoogle"
-        android:text="Registrarse con Google"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="305dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="146dp"
@@ -86,7 +24,75 @@
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:src="@drawable/logo2"
+        android:layout_marginBottom="30dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="113dp" />
+
+    <Button
+        android:id="@+id/loginFbButton2"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedbutton"
+        android:text="Registrarse con Facebook"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/loginGoogleButton2"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedbuttongoogle"
+        android:text="Registrarse con Google"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <Button
+        android:id="@+id/loginTwitterButton2"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedbuttontwitter"
+        android:text="Registrarse con Twitter"
+        android:layout_marginBottom="40dp"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="¿Aún no estas registrado?"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:background="@color/loginButton"
+        android:text="Registrate ahora"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="516dp" />
 
 </LinearLayout>

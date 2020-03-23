@@ -24,19 +24,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese Usuario"
-        android:paddingBottom="12dp" />
+        android:paddingBottom="20dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="12dp"
+        android:paddingBottom="20dp"
         android:hint="Ingrese Contraseña" />
 
     <Button
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/loginButton"
         android:text="Iniciar Sesión"
         android:textColor="#ffffff" />
@@ -72,7 +72,7 @@
         android:layout_width="212dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/roundedbuttontwitter"
         android:text="Login con Twitter"
         android:textColor="#ffffff" />
