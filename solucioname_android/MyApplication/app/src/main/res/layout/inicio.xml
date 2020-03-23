@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/views"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="@android:color/darker_gray"
@@ -37,7 +37,7 @@
         tools:layout_editor_absoluteY="446dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtBienvenido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -48,31 +48,29 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="471dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:gravity="left"
-        android:text="  Nivel"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="471dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="170dp"
-        android:layout_height="30dp"
-        android:layout_gravity="right" />
-
-    <EditText
-        android:id="@+id/editText4"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:hint="  Confirme contraseña "
-        android:paddingBottom="20dp" />
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Nivel:  "
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnNivel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+    </LinearLayout>
+
+
 
     <Button
         android:id="@+id/button"
