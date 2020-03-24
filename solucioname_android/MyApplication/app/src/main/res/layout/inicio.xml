@@ -65,7 +65,6 @@
         <Spinner
             android:id="@+id/spnNivel"
             android:layout_width="205dp"
-
             android:layout_height="30dp" />
 
     </LinearLayout>
@@ -107,7 +106,7 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:layout_width="168dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Buscar" />
@@ -123,7 +122,7 @@
             android:id="@+id/textView5"
             android:layout_width="154dp"
             android:layout_height="30dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="10dp"
             android:text="  Entregar:"
             android:textSize="23dp"
             android:textStyle="bold" />
@@ -150,20 +149,20 @@
     </LinearLayout>
 
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginBottom="10dp"
-        android:hint="  Comentario "
-        android:paddingBottom="20dp" />
-
     <Button
         android:id="@+id/button4"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="#A0E451"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
         android:layout_gravity="center"
+        android:background="#A0E451"
         android:text="ENVIAR" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
