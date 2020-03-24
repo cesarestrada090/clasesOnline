@@ -92,7 +92,7 @@
         android:layout_width="179dp"
         android:layout_height="47dp"
         android:layout_gravity="center"
-        android:background="@color/loginButton"
+        android:background="#2FAC27"
         android:text="Registrate ahora"
         android:textColor="#ffffff"
         tools:layout_editor_absoluteX="116dp"
