@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
-        android:onClick="sendMessage"
+        android:onClick="irPantallaInicio"
         android:background="#324FEC"
         android:text="Iniciar Sesión"
         android:textColor="#ffffff" />
@@ -92,6 +92,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
+        android:onClick="irRegistroPersonalizado"
         android:textStyle="bold"
         android:text="¿Aún no estas registrado? Registrate ahora" />
 

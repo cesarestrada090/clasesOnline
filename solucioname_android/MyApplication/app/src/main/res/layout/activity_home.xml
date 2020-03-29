@@ -72,26 +72,26 @@
     </LinearLayout>
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="204dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="18dp"
-        android:text="  Materia:"
-        android:textColor="#0E0E0E"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblMateria"
+            android:layout_width="204dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="18dp"
+            android:text="  Materia:"
+            android:textColor="#0E0E0E"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spnNivel"
-        android:layout_width="205dp"
-        android:layout_height="30dp" />
+        <Spinner
+            android:id="@+id/spMateria"
+            android:layout_width="205dp"
+            android:layout_height="30dp" />
 
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/lblArchivo"
             android:layout_width="236dp"
             android:layout_height="30dp"
             android:layout_marginBottom="25dp"
@@ -125,7 +125,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/lblEntregar"
             android:layout_width="154dp"
             android:layout_height="30dp"
             android:layout_marginBottom="46dp"
