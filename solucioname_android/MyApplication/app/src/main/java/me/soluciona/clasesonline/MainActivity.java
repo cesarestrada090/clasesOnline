@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
     }
-
+    public void irPantallaInicio(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
 
 }
 

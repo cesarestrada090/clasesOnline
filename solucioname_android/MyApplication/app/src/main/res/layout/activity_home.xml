@@ -80,21 +80,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-<<<<<<< HEAD:solucioname_android/MyApplication/app/src/main/res/layout/activity_inicio.xml
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="167dp"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView5"
-=======
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-
-        <TextView
             android:id="@+id/lblMateria"
->>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb:solucioname_android/MyApplication/app/src/main/res/layout/activity_home.xml
             android:layout_width="204dp"
             android:layout_height="30dp"
             android:layout_marginBottom="18dp"
@@ -104,11 +96,7 @@
             android:textStyle="bold" />
 
         <Spinner
-<<<<<<< HEAD:solucioname_android/MyApplication/app/src/main/res/layout/activity_inicio.xml
-            android:id="@+id/spnNivel"
-=======
             android:id="@+id/spMateria"
->>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb:solucioname_android/MyApplication/app/src/main/res/layout/activity_home.xml
             android:layout_width="205dp"
             android:layout_height="30dp" />
 

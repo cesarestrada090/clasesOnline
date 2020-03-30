@@ -95,35 +95,23 @@ android:orientation="vertical">
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="471dp" />
 
-<<<<<<< HEAD
+
     <Button
         android:id="@+id/button"
-        android:layout_width="267dp"
-        android:layout_height="wrap_content"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_gravity="center"
-        android:layout_marginStart="72dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="116dp"
         android:background="#2FAC27"
+        android:onClick="irRegistroPersonalizado"
         android:text="Registrate ahora"
         android:textColor="#ffffff"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="516dp" />
-=======
-<Button
-    android:id="@+id/button"
-    android:layout_width="179dp"
-    android:layout_height="47dp"
-    android:layout_gravity="center"
-    android:background="#2FAC27"
-    android:onClick="irRegistroPersonalizado"
-    android:text="Registrate ahora"
-    android:textColor="#ffffff"
-    tools:layout_editor_absoluteX="116dp"
-    tools:layout_editor_absoluteY="516dp" />
->>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb
 
 </RelativeLayout>

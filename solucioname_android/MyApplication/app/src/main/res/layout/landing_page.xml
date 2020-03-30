@@ -44,16 +44,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center"
-<<<<<<< HEAD
+
         android:layout_marginStart="107dp"
         android:layout_marginTop="309dp"
         android:layout_marginEnd="108dp"
-        android:onClick="sendMessage"
-
-=======
         android:layout_marginBottom="30dp"
         android:onClick="irPantallaInicio"
->>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb
         android:background="#324FEC"
         android:text="Iniciar Sesión"
         android:textColor="#ffffff" />
@@ -126,7 +122,6 @@
         android:id="@+id/editText5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:layout_marginTop="231dp"
         android:ems="10"
@@ -134,12 +129,9 @@
         android:drawableStart="@drawable/vectorpass"
         android:layout_marginHorizontal="10dp"
         android:hint="  Ingrese Contraseña"
-        android:inputType="textPassword" />
-=======
+        android:inputType="textPassword"
         android:onClick="irRegistroPersonalizado"
-        android:textStyle="bold"
-        android:text="¿Aún no estas registrado? Registrate ahora" />
->>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>

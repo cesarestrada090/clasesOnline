@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +11,8 @@
         android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
         android:layout_marginBottom="10dp"
         android:background="#0B0B0B"
         tools:layout_editor_absoluteX="0dp"
@@ -19,9 +20,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
         android:layout_gravity="center"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:paddingBottom="2dp"
         android:src="@drawable/logo"
@@ -32,21 +35,23 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
         android:background="#0B0B0B"
         tools:layout_editor_absoluteX="0dp"
-        android:layout_marginBottom="25dp"
         tools:layout_editor_absoluteY="446dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
         android:gravity="center"
         android:text="REGISTRATE CON TU EMAIL"
-        android:textStyle="bold"
         android:textColor="#0C0F1B"
         android:textSize="23dp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="471dp" />
 
@@ -54,58 +59,49 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="129dp"
         android:drawableStart="@drawable/vectorperf"
         android:hint="  Ingrese nombre completo "
-        android:layout_marginBottom="25dp"
         android:paddingBottom="20dp" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="  Ingrese correo electronico "
-        android:layout_marginBottom="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="199dp"
         android:drawableStart="@drawable/vectoremail"
-        android:paddingBottom="20dp" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="  Ingrese contraseña "
-        android:drawableStart="@drawable/vectorpass"
-        android:layout_marginBottom="25dp"
-        android:paddingBottom="20dp" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="  Confirme contraseña "
-        android:drawableStart="@drawable/vectorpass"
-        android:layout_marginBottom="20dp"
+        android:hint="  Ingrese correo electronico "
         android:paddingBottom="20dp" />
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="17dp"
+        android:layout_alignParentTop="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="27dp"
+        android:layout_marginTop="409dp"
         android:gravity="center"
-        android:text="Acepto terminos y condiciones" />
+        android:text="Acepto terminos y condiciones"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="199dp"
         android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="center"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="67dp"
         android:background="#030404"
+        android:onClick="irPantallaInicio"
+
         android:text="INICIAR SESION"
         android:textColor="#FFFFFF"
-        android:onClick="irPantallaInicio"
-        android:layout_marginBottom="25dp"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="516dp" />
 
@@ -113,10 +109,39 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:text="Ya tienes una cuenta? ... Inicia sesion!"
         android:textSize="18dp"
         android:onClick="irALogin"
-        android:text="Ya tienes una cuenta? ... Inicia sesion!"
+
         android:textStyle="bold" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="269dp"
+        android:drawableStart="@drawable/vectorpass"
+        android:ems="10"
+        android:hint="  Ingrese contraseña "
+
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="339dp"
+        android:drawableStart="@drawable/vectorpass"
+        android:ems="10"
+        android:hint="  Repita la contraseña "
+
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
+
+</RelativeLayout>
