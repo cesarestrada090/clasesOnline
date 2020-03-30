@@ -130,8 +130,7 @@
         android:layout_marginHorizontal="10dp"
         android:hint="  Ingrese Contraseña"
         android:inputType="textPassword"
-        android:onClick="irRegistroPersonalizado"
-        android:textStyle="bold"/>
+        android:onClick="irRegistroPersonalizado"/>
 
 
 </RelativeLayout>
