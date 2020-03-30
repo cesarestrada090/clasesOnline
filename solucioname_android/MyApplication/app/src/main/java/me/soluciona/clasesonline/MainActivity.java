@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, Registro.class);
+        Intent intent = new Intent(this, Inicio.class);
         startActivity(intent);
     }
 }
