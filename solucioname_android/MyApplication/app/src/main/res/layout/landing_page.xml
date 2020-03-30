@@ -37,16 +37,6 @@
         android:hint="  Ingrese Usuario"
         android:paddingBottom="20dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="239dp"
-        android:drawableStart="@drawable/vectorpass"
-        android:hint="  Ingrese Contraseña"
-        android:paddingBottom="20dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,8 +47,9 @@
         android:layout_marginStart="107dp"
         android:layout_marginTop="309dp"
         android:layout_marginEnd="108dp"
-        android:background="#324FEC"
         android:onClick="sendMessage"
+
+        android:background="#324FEC"
         android:text="Iniciar Sesión"
         android:textColor="#ffffff" />
 
@@ -121,8 +112,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="13dp"
         android:gravity="center"
+        android:onClick="sendMessage"
+
         android:text="¿Aún no estas registrado? Registrate ahora"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="231dp"
+        android:ems="10"
+        android:paddingBottom="20dp"
+        android:drawableStart="@drawable/vectorpass"
+        android:layout_marginHorizontal="10dp"
+        android:hint="  Ingrese Contraseña"
+        android:inputType="textPassword" />
 
 
 </RelativeLayout>
