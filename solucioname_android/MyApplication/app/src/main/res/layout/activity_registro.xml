@@ -5,7 +5,7 @@ android:layout_width="match_parent"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_height="match_parent"
 android:background="#FFFFFF"
-tools:context=".Registro"
+tools:context=".RegistroActivity"
 android:orientation="vertical">
 
     <ImageView
@@ -95,6 +95,7 @@ android:orientation="vertical">
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="471dp" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/button"
         android:layout_width="267dp"
@@ -111,5 +112,18 @@ android:orientation="vertical">
         android:textColor="#ffffff"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="516dp" />
+=======
+<Button
+    android:id="@+id/button"
+    android:layout_width="179dp"
+    android:layout_height="47dp"
+    android:layout_gravity="center"
+    android:background="#2FAC27"
+    android:onClick="irRegistroPersonalizado"
+    android:text="Registrate ahora"
+    android:textColor="#ffffff"
+    tools:layout_editor_absoluteX="116dp"
+    tools:layout_editor_absoluteY="516dp" />
+>>>>>>> f3f72c5814148c70c59d15949a1da61843213dcb
 
 </RelativeLayout>
