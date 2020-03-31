@@ -82,19 +82,19 @@ android:orientation="vertical">
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="446dp" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="111dp"
+        android:layout_marginBottom="110dp"
         android:gravity="center"
         android:text="¿Aún no estas registrado?"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="471dp" />
-
 
     <Button
         android:id="@+id/button"

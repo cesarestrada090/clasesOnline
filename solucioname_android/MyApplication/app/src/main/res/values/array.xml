@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Nivel">
+        <item>Seleccione</item>
+        <item>Escolar</item>
+        <item>Pregrado</item>
+        <item>Postgrado</item>
+    </string-array>
+
+    <string-array name="Materia">
+        <item>Seleccione</item>
+        <item>Matematica</item>
+        <item>Quimica</item>
+        <item>Fisica</item>
+        <item>Termodinamica</item>
+        <item>Etica</item>
+        <item>Lengua</item>
+        <item>Ciencias sociales</item>
+        <item>Biologia</item>
+        <item>Anatomia</item>
+        <item>Psicologia</item>
+        <item>Ingenieria electrica</item>
+        <item>Automatizacion</item>
+        <item>Filosofia</item>
+
+    </string-array>
+
+
+</resources>
