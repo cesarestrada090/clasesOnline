@@ -125,11 +125,11 @@
             android:id="@+id/button3"
             android:layout_width="150dp"
             android:layout_height="37dp"
-            android:textColor="#000000"
             android:background="#41DAA4"
             android:drawableStart="@drawable/vectorbuscar"
             android:paddingStart="15dp"
-            android:text="Buscar" />
+            android:text="Buscar"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
@@ -155,19 +155,27 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Lo mas pronto posible" />
 
-            <RadioButton
+                <RadioButton
                 android:id="@+id/radioButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Fecha" />
+
+            </RadioGroup>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -197,7 +205,6 @@
         android:layout_marginBottom="9dp"
         android:ems="10"
         android:hint="  Ingrese su comentario"
-
         android:gravity="start|top"
         android:inputType="textMultiLine" />
 
