@@ -200,15 +200,39 @@
         android:hint="  Ingrese su comentario"
         android:inputType="textMultiLine" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="154dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:layout_gravity="center"
         android:background="#2FAC27"
         android:text="ENVIAR"
         android:textColor="#ffffff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.2"
+            />
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#D3D3D3"
+            android:text="Cerrar Sesión"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
 
     <Space
         android:layout_width="match_parent"

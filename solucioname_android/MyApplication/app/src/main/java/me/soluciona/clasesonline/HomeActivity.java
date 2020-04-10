@@ -2,14 +2,42 @@ package me.soluciona.clasesonline;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private GoogleSignInClient mGoogleSignInClient;
+    private Button btnSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        btnSignOut = findViewById(R.id.btnLogOut);
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mGoogleSignInClient.signOut();
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                Toast.makeText(HomeActivity.this,"Has cerrado Sesión",Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
 
     }
 

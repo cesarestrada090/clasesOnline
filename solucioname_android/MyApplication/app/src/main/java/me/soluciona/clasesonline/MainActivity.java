@@ -19,6 +19,7 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
 
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+        mAuth = FirebaseAuth.getInstance();
 
         signInButton = findViewById(R.id.loginGoogleButton);
         signInButton.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == RC_SIGN_IN){
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+
             handleSignInResult(task);
         }
     }
@@ -100,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
                         FirebaseUser user = mAuth.getCurrentUser();
                         updateUI(user);
                     } else {
@@ -113,10 +116,11 @@ public class MainActivity extends AppCompatActivity {
         else{
             Toast.makeText(MainActivity.this, "acc failed", Toast.LENGTH_SHORT).show();
         }
+        String s= "";
     }
 
     private void updateUI(FirebaseUser fUser){
-        btnSignOut.setVisibility(View.VISIBLE);
+
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
         if(account !=  null){
             String personName = account.getDisplayName();
@@ -125,8 +129,9 @@ public class MainActivity extends AppCompatActivity {
             String personEmail = account.getEmail();
             String personId = account.getId();
             Uri personPhoto = account.getPhotoUrl();
-
-            Toast.makeText(MainActivity.this,personName + personEmail ,Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, HomeActivity.class);
+            Toast.makeText(MainActivity.this, "Bienvenido: "+personName +" -> "+personEmail, Toast.LENGTH_SHORT).show();
+            startActivity(intent);
         }
 
     }
