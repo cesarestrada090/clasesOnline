@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,60 +11,50 @@
     <View
         android:id="@+id/views"
         android:layout_width="match_parent"
-        android:layout_height="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="10dp"
-        android:background="#000000"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="446dp" />
+        android:background="#000000" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="411dp"
-        android:layout_height="58dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_gravity="center"
         android:layout_marginTop="19dp"
-        android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="113dp" />
+        android:src="@drawable/logo" />
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_alignParentTop="true"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
         android:layout_marginTop="7dp"
-        android:background="#000000"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="446dp" />
+        android:background="#000000" />
 
     <TextView
         android:id="@+id/txtBienvenido"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="88dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:text="Bienvenido!"
         android:textColor="#0C0F1B"
         android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="471dp" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="118dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="204dp"
-            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
             android:layout_marginBottom="19dp"
             android:text="  Nivel:"
             android:textColor="#0E0E0E"
@@ -73,25 +63,32 @@
 
         <Spinner
             android:id="@+id/spnNivel"
-            android:layout_width="205dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:entries="@array/Nivel"/>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
 
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="167dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/lblMateria"
-            android:layout_width="204dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
-            android:layout_marginBottom="18dp"
             android:text="  Materia:"
             android:textColor="#0E0E0E"
             android:textSize="20dp"
@@ -99,24 +96,31 @@
 
         <Spinner
             android:id="@+id/spMateria"
-            android:layout_width="205dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:entries="@array/Materia"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
 
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="214dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/lblArchivo"
-            android:layout_width="236dp"
+            android:layout_width="0dp"
             android:layout_height="30dp"
-            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
             android:text="  Archivo:"
             android:textColor="#0E0E0E"
             android:textSize="20dp"
@@ -124,102 +128,92 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="37dp"
             android:background="#41DAA4"
             android:drawableStart="@drawable/vectorbuscar"
-            android:paddingStart="15dp"
             android:text="Buscar"
             android:textColor="#000000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="269dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/lblEntregar"
-            android:layout_width="154dp"
+            android:id="@+id/lblFecha"
+            android:layout_width="0dp"
             android:layout_height="30dp"
-            android:layout_marginBottom="46dp"
-            android:text="  Entregar:"
+            android:layout_weight="1"
+            android:text="  Fecha:"
             android:textColor="#0E0E0E"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
-            <RadioGroup
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:text="Lo mas pronto posible" />
 
-                <RadioButton
-                    android:id="@+id/radioButton3"
-                    android:layout_width="181dp"
-                    android:layout_height="5dp"
-                    android:layout_weight="1"
-                    android:text="Lo mas pronto posible" />
-
-                <RadioButton
-                    android:id="@+id/radioButton4"
-                    android:layout_width="205dp"
-                    android:layout_height="8dp"
-                    android:layout_weight="1"
-                    android:text="Fecha" />
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Fecha" />
 
 
-
-
-            </RadioGroup>
-
-        </LinearLayout>
-
+        </RadioGroup>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="154dp"
-        android:layout_height="38dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="128dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="74dp"
-        android:background="#2FAC27"
-        android:text="ENVIAR"
-        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/editText7"
         android:layout_width="match_parent"
-        android:layout_height="99dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_above="@+id/button4"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="511dp"
-        android:layout_marginBottom="9dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="  Ingrese su comentario"
         android:inputType="textMultiLine" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="154dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="#2FAC27"
+        android:text="ENVIAR"
+        android:textColor="#ffffff" />
 
-</RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+
+</LinearLayout>
