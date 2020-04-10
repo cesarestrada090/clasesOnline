@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:61352743949:android:b5ca58b97272c1c1eb7144",
+        "mobilesdk_app_id": "1:61352743949:android:ad159ed58a98c7f5eb7144",
         "android_client_info": {
-          "package_name": "com.solucioname.clases"
+          "package_name": "me.soluciona.clasesonline"
         }
       },
       "oauth_client": [
         {
-          "client_id": "61352743949-cftbo53ulsd0p7c42gv7hq5ie4slik1a.apps.googleusercontent.com",
+          "client_id": "61352743949-813lk0apa4077drs0n2fgemineperlha.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.solucioname.clases",
+            "package_name": "me.soluciona.clasesonline",
             "certificate_hash": "5137fa7858e54a4f79d34454824ef63c44a67f80"
           }
         },
