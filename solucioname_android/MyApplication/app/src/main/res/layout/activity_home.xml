@@ -54,7 +54,8 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="204dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="20dp"
 
             android:layout_marginBottom="19dp"
@@ -65,9 +66,17 @@
 
         <Spinner
             android:id="@+id/spnNivel"
-            android:layout_width="205dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:entries="@array/Nivel"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
+
 
 
     </LinearLayout>
@@ -76,14 +85,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/lblMateria"
-            android:layout_width="204dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
-            android:layout_marginBottom="18dp"
             android:text="  Materia:"
             android:textColor="#0E0E0E"
             android:textSize="20dp"
@@ -91,9 +99,16 @@
 
         <Spinner
             android:id="@+id/spMateria"
-            android:layout_width="205dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:entries="@array/Materia"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
+
 
     </LinearLayout>
 
@@ -105,7 +120,8 @@
 
         <TextView
             android:id="@+id/lblArchivo"
-            android:layout_width="236dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:layout_marginBottom="25dp"
             android:text="  Archivo:"
@@ -115,13 +131,18 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="37dp"
             android:background="#41DAA4"
             android:drawableStart="@drawable/vectorbuscar"
-            android:paddingStart="15dp"
             android:text="Buscar"
             android:textColor="#000000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            />
 
     </LinearLayout>
 

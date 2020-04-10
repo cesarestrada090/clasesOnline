@@ -29,10 +29,7 @@ public class PickersActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        //Widget EditText donde se mostrara la fecha obtenida
-        etFecha = (EditText) findViewById(R.id.et_mostrar_fecha_picker);
-        //Widget ImageButton del cual usaremos el evento clic para obtener la fecha
-        ibObtenerFecha = (ImageButton) findViewById(R.id.ib_obtener_fecha);
+
         //Evento setOnClickListener - clic
         ibObtenerFecha.setOnClickListener(this);
 
@@ -40,11 +37,7 @@ public class PickersActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.ib_obtener_fecha:
-                obtenerFecha();
-                break;
-        }
+
     }
 
     private void obtenerFecha(){
