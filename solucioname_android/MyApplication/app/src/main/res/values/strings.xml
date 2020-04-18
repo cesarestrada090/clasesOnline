@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Tutoreandome</string>
     <string name="title_activity_barradenavegacion">barradenavegacion</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_pedidos">Pedidos</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_activity_bottonnavbar">bottonnavbar</string>
 
 
 </resources>
