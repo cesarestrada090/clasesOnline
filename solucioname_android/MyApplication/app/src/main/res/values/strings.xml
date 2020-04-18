@@ -1,18 +1,11 @@
 <resources>
     <string name="app_name">Tutoreandome</string>
     <string name="title_activity_barradenavegacion">barradenavegacion</string>
-<<<<<<< HEAD
     <string name="title_inicio">Inicio</string>
     <string name="title_pedidos">Pedidos</string>
     <string name="title_perfil">Perfil</string>
     <string name="title_activity_bottonnavbar">bottonnavbar</string>
-=======
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="facebook_app_id">1241758366215458</string> <string name="fb_login_protocol_scheme">fb1241758366215458</string>
->>>>>>> 59598c58b606c942cc36fa112d6e3b371d70380e
-
     <string name="cancel_login">Se canceló la operación</string>
     <string name="error_login">Ocurrió un error al ingresar</string>
     <string name="logout">Cerrar sesión</string>

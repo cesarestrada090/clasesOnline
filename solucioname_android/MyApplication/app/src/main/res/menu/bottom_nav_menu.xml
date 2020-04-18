@@ -3,34 +3,17 @@
 
     <item
         android:id="@+id/navigation_home"
-<<<<<<< HEAD
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_inicio"
-        />
-
-    <item
-        android:id="@+id/navigation_pedidos"
-        android:icon="@drawable/vectorpedidos"
-        android:title="@string/title_pedidos"
-        />
-
-    <item
-        android:id="@+id/navigation_perfil"
-        android:icon="@drawable/vectorperf"
-        android:title="@string/title_perfil" />
-=======
-        android:icon="@drawable/ic_history_black_24dp"
-        android:title="@string/title_home" />
+        android:icon="@drawable/vectorhome"
+        android:title="@string/title_inicio" />
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="title_dashboard" />
+        android:icon="@drawable/vectorpedidos"
+        android:title="@string/title_pedidos" />
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_accessibility_black_24dp"
-        android:title="title_notifications" />
->>>>>>> 59598c58b606c942cc36fa112d6e3b371d70380e
+        android:icon="@drawable/vectorperf"
+        android:title="@string/title_perfil" />
 
 </menu>

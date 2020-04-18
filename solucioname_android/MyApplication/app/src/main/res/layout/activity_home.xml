@@ -236,12 +236,10 @@
 
         </LinearLayout>
 
-<<<<<<< HEAD
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.2"/>
-=======
 
 
 
@@ -253,7 +251,6 @@
         android:background="?android:attr/windowBackground"
         app:menu="@menu/bottom_nav_menu"
         />
->>>>>>> 59598c58b606c942cc36fa112d6e3b371d70380e
 
 
 </LinearLayout>
