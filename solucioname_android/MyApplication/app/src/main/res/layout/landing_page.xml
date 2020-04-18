@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.5"
+        android:layout_weight="3"
         android:src="@drawable/logo1" />
 
     <ImageView
@@ -109,13 +109,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:layout_alignParentBottom="true"
         android:gravity="center"
         android:textColor="#ffffff"
         android:onClick="sendMessage"
         android:text="¿Aún no estas registrado? Registrate ahora"
         android:textStyle="bold" />
-
 
 </LinearLayout>
 
