@@ -1,7 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flOuter"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E60606">
+    android:layout_height="match_parent">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/logo" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="7dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bienvenido!"
+            android:textColor="#0C0F1B"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_marginBottom="19dp"
+                android:text="  Nivel:"
+                android:textColor="#0E0E0E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnNivel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:entries="@array/Nivel"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblMateria"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text="  Materia:"
+                android:textColor="#0E0E0E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spMateria"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:entries="@array/Materia"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblArchivo"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="  Archivo:"
+                android:textColor="#0E0E0E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="37dp"
+                android:background="#41DAA4"
+                android:drawableStart="@drawable/vectorbuscar"
+                android:text="Buscar"
+                android:textColor="#000000" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblFecha"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="  Fecha:"
+                android:textColor="#0E0E0E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Lo mas pronto posible" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Fecha">
+
+
+                </RadioButton>
+
+
+            </RadioGroup>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_above="@+id/button4"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="  Ingrese su comentario"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="#2FAC27"
+                android:text="ENVIAR"
+                android:textColor="#ffffff" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.2"
+                />
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="#D3D3D3"
+                android:text="Cerrar Sesión"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
