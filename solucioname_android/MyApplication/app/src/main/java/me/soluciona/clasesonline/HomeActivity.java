@@ -64,7 +64,7 @@ public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
-                public boolean OnNavigationItemSelected(@NonNull MenuItem item) {
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     Fragment selectedFragment = null;
 
                     switch (item.getItemId()) {
@@ -79,7 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                             break;
                     }
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flOuter,
                             selectedFragment).commit();
 
                     return true;
