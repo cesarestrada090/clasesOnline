@@ -20,7 +20,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-
 public class HomeActivity extends AppCompatActivity {
 
     private GoogleSignInClient mGoogleSignInClient;
